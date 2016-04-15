@@ -24,8 +24,8 @@ var generateFortuneCookie = function() {
         // 2. Set the `innerHTML` of that element equal to the `innerHTML` of
         //    the `#fortune-cookie-text` element.
   
-  document.getElementById('fortune-cookie-text').innerHTML = newListEl;
-  
+//   document.getElementById('fortune-cookie-text').innerHTML = newListEl;
+  newListEl.innerHTML = document.getElementById('fortune-cookie-text').innerHTML;     // this line appends the text INTO the list, allows randomization
         // 3. Select the `#previous-fortunes-container` container and use
         //    `appendChild()` to append the new `li` element you created above.
   
